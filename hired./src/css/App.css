@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  background-color: #4F5D75; }
+
+ul {
+  display: inline-flex;
+  list-style: none;
+  width: 100vw;
+  padding-right: 40px; }
+  ul h2 {
+    font-family: "Helvetica Neue";
+    margin: 0px;
+    color: #BFC0C0;
+    font-size: 2.2rem; }
+    ul h2:hover {
+      cursor: pointer;
+      color: #FFFF; }
+  ul li {
+    font-family: "Helvetica Neue";
+    padding: 8px;
+    font-weight: 300; }
+  ul span.right {
+    color: #BFC0C0;
+    font-size: 1.2rem;
+    width: 100vw;
+    text-align: right; }
+    ul span.right li {
+      padding-right: 1rem;
+      display: inline-flex;
+      font-size: 1.5rem; }
+      ul span.right li:hover {
+        text-decoration: underline #EF8354;
+        cursor: pointer;
+        color: #FFFF; }
+
+div.hero {
+  padding-left: 8rem;
+  top: 8rem;
+  position: relative;
+  color: #FFFF; }
+  div.hero h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 4.5rem;
+    margin-bottom: 0px; }
+  div.hero h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+    font-size: 2rem;
+    margin-top: 6px;
+    margin-bottom: 0px; }
+  div.hero i {
+    text-decoration: underline;
+    text-decoration-color: #EF8354; }
+  div.hero div.buttons {
+    margin-top: 2rem; }
+    div.hero div.buttons button.btn-1 {
+      background-color: #eb6125;
+      color: #FFFF;
+      border: #eb6125;
+      margin-right: 2rem;
+      padding: 10px;
+      border-radius: 1rem;
+      font-size: 1.3rem;
+      font-weight: 400;
+      font-family: 'Raleway', sans-serif;
+      width: 7rem; }
+      div.hero div.buttons button.btn-1:hover {
+        cursor: pointer;
+        background-color: #e15315; }
+    div.hero div.buttons button.btn-2 {
+      background-color: #BFC0C0;
+      color: #4F5D75;
+      border: #EF8354;
+      padding: 10px;
+      border-radius: 1rem;
+      font-size: 1.3rem;
+      font-weight: 400;
+      font-family: 'Raleway', sans-serif;
+      width: 8rem; }
+      div.hero div.buttons button.btn-2:hover {
+        cursor: pointer;
+        background-color: #A5A7A7; }
