@@ -1,0 +1,82 @@
+div.job-card {
+    border: 2px solid #BFC0C0;
+    background-color: #BFC0C0;
+    border-radius: 5rem;
+    // margin: 8rem,;
+    // margin: 8rem,6rem,4rem,8rem;
+    margin-top: 8rem;
+    margin-left: 6rem;
+    margin-right: 6rem;
+    margin-bottom: 4rem;
+    height: auto;
+    width: auto;
+
+
+    ul {
+        width: auto;
+        display: block;
+        li {
+            font-family: 'Raleway', sans-serif;
+            font-size: 1.8rem;
+            font-style: italic;
+            padding-bottom: 1rem;
+            font-weight: 300;
+            color: #4F5D75;
+
+            button {
+                margin-top: 1.1rem;
+                background-color: #eb6125;
+                color: #FFFF;
+                border: #eb6125;
+                margin-right: 2rem;
+                padding: 10px;
+                border-radius: 1rem;
+                font-size: 1.1rem;
+                font-weight: 400;
+                font-family: 'Raleway', sans-serif;
+                width: 7rem;
+    
+                &:hover {
+                    cursor: pointer;
+                    background-color: #e15315;
+                }            
+            }
+
+            &.skills {
+                display: inline-flex;
+                padding-top: 0rem;
+
+                li {
+                    padding-top: 0rem;
+                    border: 1px solid #4F5D75;
+                    border-radius: 2rem;
+                    padding: 1rem;
+                    margin-right: 1rem;
+                    font-size: 1.2rem;
+                    background-color: #4F5D75;
+                    color: #FFF;
+                }
+            }
+
+            span.titles {
+                font-size: 2rem;
+                font-weight: 400;
+                display: block;
+                font-style: normal;
+                // padding-bottom: .5rem;
+
+                &#company {
+                    display: inline;
+                    padding-right: .8rem;
+                }
+                &#applicants {
+                    display: inline;
+                    padding-right: .8rem;
+                }
+                &#title {
+                   font-size: 2.3rem;
+                }
+            }
+        }
+    }
+}

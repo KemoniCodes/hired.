@@ -1,6 +1,7 @@
 import React from 'react'
 import axios from 'axios'
-// import { title } from 'process'
+import '../css/Jobs.css'
+// import '../css/App.css'
 
 class Jobs extends React.Component {
     constructor() {
@@ -16,31 +17,62 @@ class Jobs extends React.Component {
                 jobs: response.data.jobs
             });
         });
+
+
     };
 
     render() {
-        // if ({ applicants } is <= 5 ) {
-        //     return ('Less than 5')
-        // } else({{ applicants } is > 5) {
-        //     return ({ applicants })
-        // }
+
         return (
             <div className="Jobs">
 
                 {this.state.jobs.map((job, i) => {
                     return (
-                        <div className="job-card">
+
+                        <div key={job.id} className="job-card">
                             <ul>
-                                <li>Job title:</li>
-                                <li>{job.title}</li>
-                                <li>Description:</li>
-                                <li>{job.description}</li>
-                                <li>Location: {job.location}</li>
-                                <li>Company: {job.company}</li>
-                                <li>Job type: {job.job_type}</li>
-                                <li>Applicants: {job.applicant_count}</li>
-                                <li>Skills:</li>
-                                <li>{job.skills_tag}</li>
+                                <li>
+                                    <span className="titles" id='title'>
+                                        {job.title}
+                                    </span>
+
+                                </li>
+                                {/* <li>Description:</li>
+                                <li>{job.description}</li> */}
+                                <li>
+                                    <span className="titles" id='company'>
+                                        {job.company}
+                                    </span>
+                                    ({job.job_type})
+                                </li>
+
+                                <li>
+                                    <span className="titles">
+                                        Location:
+                                    </span>
+                                    {job.location === undefined ? 'Remote' : job.location}
+                                </li>
+
+                                <li>
+                                    <span className="titles" id='company'>
+                                        Applicants:
+                                    </span>
+                                    {job.applicant_count}
+                                </li>
+                                <li>
+                                    <span className="titles">
+                                        Skills:
+                                    </span>
+                                </li>
+                                <li className='skills'>{job.skills_tag.map((skill, i) =>
+                                    <li key={i}>
+                                        {skill}
+                                    </li>
+                                )}
+                                </li>
+                                <li>
+                                    <button>Apply</button>
+                                </li>
                             </ul>
                         </div>
                     )
