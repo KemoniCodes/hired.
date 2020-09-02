@@ -22,11 +22,17 @@ ul {
             color: #FFFF;
         }
     }
-    li {
-        font-family: "Helvetica Neue";
-        padding: 8px;
-        font-weight: 300;
+    a {
+        text-decoration: none;
+        color: #BFC0C0;
+        li {
+            font-family: "Helvetica Neue";
+            padding: 8px;
+            font-weight: 400;
+            letter-spacing: .3px;
+        }
     }
+ 
      span.right {
         color: #BFC0C0;
         font-size: 1.2rem;
@@ -73,40 +79,49 @@ div.hero {
 
     div.buttons {
         margin-top: 2rem;
-        button.btn-1 {
-            background-color: #eb6125;
-            color: #FFFF;
-            border: #eb6125;
-            margin-right: 2rem;
-            padding: 10px;
-            border-radius: 1rem;
-            font-size: 1.3rem;
-            font-weight: 400;
-            font-family: 'Raleway', sans-serif;
-            width: 7rem;
-
-            &:hover {
-                cursor: pointer;
-                background-color: #e15315;
-            }
-        }
-
-        button.btn-2 {
-            background-color: #BFC0C0;
-            color: #4F5D75;
-            border: #EF8354;
-            padding: 10px;
-            border-radius: 1rem;
-            font-size: 1.3rem;
-            font-weight: 400;
-            font-family: 'Raleway', sans-serif;
-            width: 8rem;
-
-            &:hover {
-                cursor: pointer;
-                background-color: #A5A7A7;
+        a {
+            outline: none;
+            button.btn-1 {
+                background-color: #eb6125;
+                color: #FFFF;
+                border: #eb6125;
+                margin-right: 2rem;
+                padding: 10px;
+                border-radius: 1rem;
+                font-size: 1.3rem;
+                font-weight: 400;
+                font-family: 'Raleway', sans-serif;
+                width: 7rem;
+                outline: none;
+    
+    
+                &:hover {
+                    cursor: pointer;
+                    background-color: #e15315;
+                }
             }
         }
      
+        a {
+            outline: none;
+            button.btn-2 {
+                background-color: #BFC0C0;
+                color: #4F5D75;
+                border: #EF8354;
+                padding: 10px;
+                border-radius: 1rem;
+                font-size: 1.3rem;
+                font-weight: 400;
+                font-family: 'Raleway', sans-serif;
+                width: 8rem;
+                outline: none;
+    
+    
+                &:hover {
+                    cursor: pointer;
+                    background-color: #A5A7A7;
+                }
+            }
+        }
     }
 }

@@ -1,6 +1,7 @@
 import React from 'react'
 import axios from 'axios'
 import '../css/Jobs.css'
+import Nav from './Nav';
 // import '../css/App.css'
 
 class Jobs extends React.Component {
@@ -24,7 +25,10 @@ class Jobs extends React.Component {
     render() {
 
         return (
+
             <div className="Jobs">
+                <Nav />
+
 
                 {this.state.jobs.map((job, i) => {
                     return (

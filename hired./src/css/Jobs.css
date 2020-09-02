@@ -26,10 +26,12 @@ div.job-card {
         margin-right: 2rem;
         padding: 10px;
         border-radius: 1rem;
-        font-size: 1.1rem;
+        font-size: 1.3rem;
         font-weight: 400;
         font-family: 'Raleway', sans-serif;
-        width: 7rem; }
+        width: 10rem;
+        letter-spacing: 1px;
+        outline: none; }
         div.job-card ul li button:hover {
           cursor: pointer;
           background-color: #e15315; }
@@ -47,7 +49,7 @@ div.job-card {
           color: #FFF; }
       div.job-card ul li span.titles {
         font-size: 2rem;
-        font-weight: 400;
+        font-weight: 500;
         display: block;
         font-style: normal; }
         div.job-card ul li span.titles#company {
@@ -57,4 +59,9 @@ div.job-card {
           display: inline;
           padding-right: .8rem; }
         div.job-card ul li span.titles#title {
-          font-size: 2.3rem; }
+          font-size: 2.4rem;
+          padding-top: 2rem;
+          padding-bottom: 1rem; }
+          div.job-card ul li span.titles#title:hover {
+            text-decoration: #eb6125 underline;
+            cursor: pointer; }
